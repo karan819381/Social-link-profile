@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --Green: hsl(75, 94%, 57%);
+  --White: hsl(0, 0%, 100%);
+  --Grey: hsl(0, 0%, 20%);
+  --Dark-Grey: hsl(0, 0%, 12%);
+  --Off-Black: hsl(0, 0%, 8%);
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  background-color: var(--Off-Black);
+  color: var(--White);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.card{
+    width: 25rem;
+    background-color: var(--Dark-Grey);
+    text-align: center;
+    border-radius: 10px;
+}
+
+.card img {
+    width: 6rem;
+    border-radius: 50%;
+    margin-top: 2rem;
+}
+
+.card h2 {
+    margin-top: 2rem;
+}
+
+.card h4 {
+    color: var(--Green);
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.card h5 {
+    font-size: 1rem;
+    opacity: .8;
+    font-weight: 400;
+    margin-bottom: 1.5rem;
+}
+
+.button-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+.button-container button {
+    width: 100%;
+    margin: .5rem;
+    padding: 1rem;
+    border-radius: 5px;
+    background-color: var(--Grey);
+    color: var(--White);
+    border: none;
+    cursor: pointer;
+}
+
+.button-container button:active {
+    background-color: var(--Green);
+    color: var(--Off-Black);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin: 2rem;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
